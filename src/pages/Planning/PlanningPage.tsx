@@ -2,6 +2,7 @@ import { AgGridReact } from "ag-grid-react";
 import { ColDef } from "ag-grid-community";
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
+import "./PlanningPage.css"; // Import the new CSS file
 
 const PlanningPage = () => {
   const columnDefs: ColDef[] = [
@@ -14,7 +15,7 @@ const PlanningPage = () => {
   ];
 
   return (
-    <div className="ag-theme-alpine" style={{ height: "500px", width: "100%" }}>
+    <div className="ag-theme-alpine planning-grid">
       <AgGridReact rowData={[]} columnDefs={columnDefs} />
     </div>
   );

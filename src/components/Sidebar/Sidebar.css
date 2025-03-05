@@ -1,0 +1,39 @@
+/* Sidebar container */
+aside {
+  width: 150px;
+  background: #ffffff;
+}
+
+/* Styling for the unordered list */
+ul {
+  list-style: none;
+  padding: 0;
+  background: transparent;
+  margin-top: 20px;
+}
+
+/* Styling for list items */
+ul li {
+  margin: 0px 0;
+  background: transparent;
+}
+
+/* Styling for links inside list items */
+ul li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s ease;
+  background: transparent;
+}
+
+/* Active state for links */
+ul li a.active {
+  background: #dfdfdf;
+}
+
+/* Hover effect for links */
+ul li a:hover {
+  background: #c2c2c2;
+}

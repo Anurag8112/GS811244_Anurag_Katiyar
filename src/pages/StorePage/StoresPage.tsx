@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../redux/store";
-import { addStore, removeStore } from "../redux/storesSlice";
+import { RootState } from "../../redux/store";
+import { addStore, removeStore } from "../../redux/storesSlice";
+import "./StorePage.css";
 
 const StoresPage = () => {
   const [storeName, setStoreName] = useState("");
@@ -9,7 +10,7 @@ const StoresPage = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="store-grid">
       <h2>Stores</h2>
       <input
         type="text"
