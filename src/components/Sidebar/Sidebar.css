@@ -2,6 +2,7 @@
 aside {
   width: 150px;
   background: #ffffff;
+  height: calc(100vh - 50px);
 }
 
 /* Styling for the unordered list */
@@ -14,7 +15,6 @@ ul {
 
 /* Styling for list items */
 ul li {
-  margin: 0px 0;
   background: transparent;
 }
 
@@ -26,6 +26,17 @@ ul li a {
   display: block;
   transition: background 0.3s ease;
   background: transparent;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+}
+
+ul li a svg {
+  margin-right: 10px;
+  align-items: center;
+  background: transparent;
+  width: 24px; /* Increase width */
+  height: 24px; /* Increase height */
 }
 
 /* Active state for links */

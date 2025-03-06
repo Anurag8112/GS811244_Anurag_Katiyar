@@ -14,7 +14,7 @@ const App = () => {
       <Navbar />
       <div style={{ display: "flex" }}>
         <Sidebar />
-        <div style={{ marginLeft: "20px", flex: 1 }}>
+        <div style={{ flex: 1 }}>
           <Routes>
             <Route path="/stores" element={<StoresPage />} />
             <Route path="/planning" element={<PlanningPage />} />
